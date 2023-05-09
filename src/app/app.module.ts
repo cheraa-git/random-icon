@@ -2,15 +2,17 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 
 import { AppComponent } from './app.component'
-import { IconBtnComponent } from './components/icon-btn/icon-btn.component'
+import { IconSwitchComponent } from './components/icon-btn/icon-switch.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
     AppComponent,
-    IconBtnComponent
+    IconSwitchComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
