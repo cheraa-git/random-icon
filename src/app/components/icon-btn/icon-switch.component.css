@@ -25,3 +25,9 @@
 .switch-btn:active {
   opacity: .8;
 }
+
+.switch-icon {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  align-self: center;
+}
