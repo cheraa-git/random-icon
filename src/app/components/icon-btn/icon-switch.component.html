@@ -1,4 +1,6 @@
 <div class="wrapper">
-  <button class="switch-btn" (click)="setRandomIcon()">switch icon</button>
+  <button class="switch-btn" [class.btn_disabled]="isLoading" [disabled]="isLoading" (click)="setRandomIcon()">
+    switch icon
+  </button>
   <fa-icon class="switch-icon" [icon]="icon"></fa-icon>
 </div>

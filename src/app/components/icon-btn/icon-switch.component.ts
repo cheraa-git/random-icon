@@ -9,6 +9,7 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 })
 export class IconSwitchComponent {
   icon: IconDefinition = this.getRandomIcon()
+  isLoading = false
 
   getRandomIcon() {
     const iconsList = Object.values(icons) as IconDefinition[]
@@ -17,6 +18,10 @@ export class IconSwitchComponent {
   }
 
   setRandomIcon() {
-    this.icon = this.getRandomIcon()
+    this.isLoading = true
+    setTimeout(() => {
+      this.icon = this.getRandomIcon()
+      this.isLoading = false
+    }, 3000)
   }
 }
