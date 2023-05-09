@@ -27,12 +27,3 @@
   margin-left: 1.5rem;
   align-self: center;
 }
-
-.btn_disabled {
-  opacity: .5;
-}
-
-.btn_disabled:hover {
-  transform: scale(1, 1);
-  box-shadow: 0 0 4px 0 rgb(119, 119, 119);
-}
